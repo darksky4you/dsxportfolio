@@ -1,0 +1,22 @@
+
+.logo{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 400;
+
+}
+.link_box a , .logo{
+    margin: 0 45px;
+    color: var(--text);
+    
+}
+
+.link_box a{
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link_box a:hover{
+    color: var(--accent);
+}

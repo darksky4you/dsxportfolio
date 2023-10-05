@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --text: #edeffd;
+  --background: #050824;
+  --primary: #1628ac;
+  --secondary: #070d36;
+  --accent: #263ce3;
+}
+
+* {
+  font-family: 'Ubuntu Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+
+
+}
+
+.text-anime {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+
+
+.anime {
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .text-anime{
+    height: 70%;
+  }
+  .anime {
+    font-size: 35px;
+
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .link_box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    background-color: var(--secondary);
+  }
+  .text-anime{
+    height: 100%;
+  }
+
+  .anime {
+    font-size: 70px;
+
+  }
+
+
+}
+
+
+
+
+.cbody{
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.contact-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 10px;
+  width: 300px;
+  background-color: var(--secondary);
+  height: 500px;
+}
+
+.contact-links a{
+  text-decoration: none;
+  border: 1px solid var(--background);
+  padding: 9px 90% ;
+
+  text-transform: uppercase;
+  color: var(--text);
+  font-size:28px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.contact-links a:hover{
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

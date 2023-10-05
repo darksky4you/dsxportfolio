@@ -1,0 +1,135 @@
+
+.none{
+    color: transparent;
+}
+.nav ul li{
+    list-style: none;
+    
+    
+}
+
+
+
+.nav ul li a:hover,
+.nav img:hover{
+    color: var(--accent);
+}
+
+
+
+.nav ul li a.active {
+  color: var(--accent);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        background-color: var(--secondary);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+        height: 64px;
+        padding: 0 30px;
+        
+    }
+    ion-icon{
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+      transform: translateX(30px);
+      color: var(--text);
+      z-index: 10;
+      transition: all 0.4s ease-in-out;
+    }
+    ion-icon:hover{
+      color: var(--accent);
+    }
+
+    .logo_mobile{
+        color: var(--text);
+        font-size: 35px;
+    }
+
+    .nav img{
+        display: block;
+        width: 35px;
+
+        cursor: pointer;
+    }
+    .link_box{
+      display: none;
+    }
+    .navigation{
+      display: flex;
+    }
+
+    .navigation li a span{
+      position: relative;
+      display: none;
+    }
+    
+    .navigation li{
+      margin: 5px 10px;
+
+    }
+    .navigation li a{
+      margin: 0 40px;
+    }
+  }
+
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+    .link_box{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 45px;
+      display: flex;
+      justify-content: space-between;
+      
+      align-items: center;
+      background-color: var(--secondary);
+  }
+  .nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 45px;
+    flex-direction: column;
+    background-color: var(--secondary);
+    z-index: 999;
+  
+  }
+  .nav ul li a{
+    color: var(--text);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  
+  
+  }
+  .nav ul li{
+    margin: 50px 0;
+  }
+  .logo_mobile{
+    display: none;
+  }
+  ion-icon{
+
+    display: none;
+    
+  }
+  }
