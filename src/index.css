@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* :root {
+:root {
   --text: #edeffd;
   --background: #050824;
   --primary: #1628ac;
   --secondary: #070d36;
   --accent: #263ce3;
-} */
+}
 
 * {
   font-family: 'Ubuntu Mono', monospace;
